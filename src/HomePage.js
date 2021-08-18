@@ -15,7 +15,7 @@ function HomePage() {
 
   useEffect(function () {
     // console.log(axios.defaults.headers["Authorization"]);
-    const socketitem = io("http://localhost:5000/", {
+    const socketitem = io("https://arcane-reaches-63890.herokuapp.com/", {
       extraHeaders: {
         Authorization: axios.defaults.headers["Authorization"],
       },
